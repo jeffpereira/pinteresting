@@ -1,6 +1,9 @@
 Pinteresting::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  #adding to precompile glyphicons for bootstrap
+  config.assets.precompile += %w( *.svg *.eot *.woff *.ttf )
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
